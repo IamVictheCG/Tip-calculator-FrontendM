@@ -1,9 +1,36 @@
 @media (min-width: 680px){
+
+    .container {
+        /* border: 2px solid #00ff55; */
+        height: 100%;
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header {
+        /* border: #2a5c66 2px solid; */
+        margin-top: 30px;
+        
+        p {
+            /* border: #2a5c66 2px solid; */
+            margin: 0%;
+        }
+
+        .descriptor {
+            /* border: 2px solid darkgoldenrod; */
+            text-align: center;
+            margin: 0%;
+        }
+    }
+
+
     .Calculator {
         /* border: #e69721 2px solid; */
         width: 60%;
+        height: 56%;
         background-color: white;
-        height: 30%;
         border-radius: 20px;
         display: flex;
         flex-direction: row;
