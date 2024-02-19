@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="desktop.css">
+    <title>Tip Calculator App</title>
+</head>
+<body>
+    <div class="container">
+        <header><p>splitter</p></header>
+       <p class="descriptor">Your Favorite Tip Calculator</p>
+        <div class="Calculator">
+        
+            <div class="billBoard">
+                <div class="billValue" id="billContainer">
+                    <label for="bill">Bill</label>
+                    <div id="billValue">
+                        <img src="images/icon-dollar.svg" alt="dollar">
+                        <input placeholder="This cannot be empty" type="text" name="bill" id="bill">
+                    </div>
+                </div>
+            
+                <div class="tip">
+                    <p>Select tip %</p>
+                    <div class="percentsBlock">
+                        <div id="five_05" class="percent"><p>5%</p></div>
+                        <div id="ten_10" class="percent"></div>
+                        <div id="fifteen_15" class="percent"></div>
+                        <div id="twentyFive_25" class="percent"></div>
+                        <div id="fifty_50" class="percent"></div>
+                        <div id="custom" class="percent">
+                            <p>Custom</p>
+                            <input placeholder="Enter a value" id="custom_1" class="percent">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="people">
+                    <label for="people">Number of people</label>
+                    <div id="people">
+                        <img src="images/icon-person.svg" alt="person">
+                        <input placeholder="This cannot be empty" required type="text" name="people" id="people_number">
+                    </div>
+                    <!-- <p id="warning" style="color: red;">This cannot be empty</p> -->
+                </div>  
+            </div>
+        
+            <!-- ====================================================================================================== -->
+            <div class="amount">
+                <div id="tipAmount" class="perPerson">
+                    <p>Tip Amount <br> <span>/ person</span></p>
+                    <input type="text" id="tip">
+                </div>
+                <div id="totalAmount" class="perPerson">
+                    <p>Total <br> <span>/ person</span></p>
+                    <input disabled type="text" id="total">
+                </div>
+                <button>RESET</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+@media (min-width: 680px){
+    .Calculator {
+        /* border: #e69721 2px solid; */
+        width: 60%;
+        background-color: white;
+        height: 30%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 5%;
+        gap: 0px;
+    }
+    
+    .billBoard{
+        width: 49%;
+        /* border: #0721df 2px solid; */
+        margin: auto;
+        margin-top: 30px;
+        margin-inline: 10px;
+        margin-block: 20px;
+        
+        /* .billValue { */
+            /* border: #15df07 2px solid; */
+            /* margin-bottom: 10px; */
+            /* label { */
+                /* font-size: .92em; */
+            /* } */
+        /* } */
+    }
+    
+    /* .tip > p {
+        margin-top: 0%;
+    } */
+    
+    
+    .amount {
+        /* border: #00d9ff 2px solid; */
+        width: 49%;
+        margin-inline: 10px;
+        margin-block: 15px;
+    }
+}
