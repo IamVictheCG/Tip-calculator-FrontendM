@@ -17,6 +17,16 @@ const reset = $("button")
 let bill;
 let people;
 let tip;
+let mobileView;
+let desktopView;
+console.log(window.innerWidth);
+if (window.innerWidth <= 680) {
+  mobileView = window.innerWidth
+} else {
+  desktopView = window.innerWidth
+}
+// console.log(mobileView);
+// console.log(desktopView);
 
 let figures = [five_Fig, ten_Fig, fifteen_Fig, twentyFive_Fig, fifty_Fig];
 
@@ -123,6 +133,11 @@ function customPercentage() {
   $(document).keydown(function (e) { 
     getCustomPercentageValue(e.key);
   });
+
+  if (mobileView) {
+    $("#custom_1").on("change", mobileLogic)
+    // custom_1.change(mobileLogic())
+  }
 }
 
 function getCustomPercentageValue(key){
@@ -153,11 +168,33 @@ function getCustomPercentageValue(key){
   }
 }
 
+function mobileLogic() {
+  console.log("mobile1");
+  setTimeout(() => {
+    console.log("mobile");
+    bill = parseFloat(billInput.val());
+    people = parseFloat(peopleInput.val());
+    let percent = parseFloat(custom_1.val()/100);
+    console.log(percent);
+    tip = ((bill) * percent) / people;
+    tipInput.val(tip.toFixed(2))
+    let total = bill / people + tip;
+    console.log(total);
+    totalInput.val(total.toFixed(2));
+  }, 600);
+  // if(custom_1.val("")) {
+  //   return;
+  // }
+}
+
+// $(custom_1).change(mobileLogic)
+
 function resetAll() {
   reset.click(() => {
     console.log("RESET Completed");
     billInput.val('');
     peopleInput.val('');
+    custom_1.val('');
   })
 }
 
