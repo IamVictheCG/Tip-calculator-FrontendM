@@ -162,7 +162,6 @@ header {
     border-radius: 10px;
     height: 35px;
     background-color: #b9e7ed;
-    color: #2a5c66 !important;
     width: 100%;
     height: 100%;
     border-style: none;
@@ -173,7 +172,12 @@ header {
     display: none;
 }
 
-#custom_1:hover {
+#custom_1::placeholder {
+    /* border: 2px solid #89dae5; */
+    font-size: 14px;
+}
+#custom_1:focus {
+    color: #2a5c66;
     border: 2px solid #89dae5;
 }
 
@@ -227,10 +231,11 @@ header {
     padding-inline: 6px;
     padding-block: 4px;
     border-radius: 7px;
+    
 
-    img {
+    /* img {
         width: 30px;
-    }
+    } */
 }
 
 .warning > input {
