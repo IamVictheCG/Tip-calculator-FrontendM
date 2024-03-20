@@ -169,6 +169,7 @@ header {
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
             background-color: #b9e7ed;
+            /* display: none; */
         }
         #custom_1_Input {
             border-radius: 10px;
@@ -348,6 +349,8 @@ footer {
     background-color: rgb(88, 88, 88);
     height: fit-content;
     padding-block: 4px;
+    position: sticky;
+    bottom: 0%;
     
     p {
         text-align: center;
