@@ -115,4 +115,24 @@
         margin-inline: 10px;
         margin-block: 15px;
     }
+
+    footer {
+        background-color: rgb(88, 88, 88);
+        height: fit-content;
+        padding-block: 4px;
+        position: fixed;
+        bottom: 0%;
+        width: 100%;
+        
+        p {
+            text-align: center;
+            color: #ffffff;
+            margin: 0%;
+            
+            a {
+                color: #0de4bd;
+    
+            }
+        }
+    }
 }
