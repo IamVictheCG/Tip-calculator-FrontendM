@@ -153,49 +153,64 @@ header {
 }
 
 #custom {
-    #custom > p{
+    border: none;
+    outline: none;
+    height: 42px;
+
+    
+    p{
+        display: block;
         width: 100%;
         text-align: center;
-        display: none;
+        /* border: #0de4bd 2px solid; */
     }
     
     #custom_1 {
-        display: none;
-        position: relative;
+        /* position: relative; */
+        display: flex;
         img {
-            position: absolute;
-            padding-block: 8.9px;
-            padding-left: 17px;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
             background-color: #b9e7ed;
-            /* display: none; */
+            width: 20%;
+            border: none;
+            outline: none;
+            display: none;
         }
         #custom_1_Input {
+            margin: 0%;
             border-radius: 10px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
             height: 35px;
             background-color: #b9e7ed;
             color: #2a5c66;
-            width: 100%;
+            width: 80%;
             height: 40px;
-            border-style: none;
+            border: none;
             outline: none;
             font-weight: bold;
             font-size: 1.4em;
             text-align: right;
-            /* display: none; */
+            display: none;
         }
         
         #custom_1_Input::placeholder {
             /* border: 2px solid #89dae5; */
-            font-size: 14px;
+            font-size: 11px;
         }
         #custom_1_Input:focus {
             color: #2a5c66;
-            border: 2px solid #89dae5;
+            /* border: 2px solid #89dae5; */
         }
     }
-    
+
+}
+#custom:hover {
+    border: 2px solid #49c2d4;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 38px;
 }
 
 

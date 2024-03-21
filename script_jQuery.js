@@ -95,6 +95,7 @@ percent_only.forEach((element) => {
   });
 });
 
+//Calculate the tip amount
 function tipCalculation(percent) {
   bill = parseFloat(billInput.val());
   people = parseFloat(peopleInput.val());
@@ -103,6 +104,7 @@ function tipCalculation(percent) {
   tipInput.val(tip.toFixed());
 }
 
+//Calculate the total amount
 function totalCalculation(percent) {
   bill = parseFloat(billInput.val());
   console.log(bill);
@@ -114,13 +116,16 @@ function totalCalculation(percent) {
   console.log(total);
 }
 
+// set up custom percentage
 function customPercentage() {
   custom.click(function () {
     const pCustom = $("#custom > p");
     console.log(pCustom);
     console.log("object");
     pCustom.css("display", "none");
-    custom_1.css("display", "block");
+    custom_1.css("display", "flex");
+    custom_1_img.css("display", "block");
+    custom_1_input.css("display", "block");
   });
 
   percent_only.forEach((el) => {
@@ -222,7 +227,6 @@ function mobileLogic() {
   // }
 }
 
-// $(custom_1_input).change(mobileLogic)
 
 function resetAll() {
   reset.click(() => {
