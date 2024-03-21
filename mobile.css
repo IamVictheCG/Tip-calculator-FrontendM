@@ -1,9 +1,10 @@
 body {
-    border: 2px solid #ff0000;
+    /* border: 2px solid #ff0000; */
     background-color: #93e8f3;
     margin: 0px;
     padding: 0%;
     margin: auto;
+    height: fit-content;
 }
 
 .container {
@@ -363,8 +364,8 @@ footer {
     background-color: rgb(88, 88, 88);
     height: fit-content;
     padding-block: 4px;
-    position: absolute;
-    bottom: 0%;
+    /* position: fixed;
+    bottom: 0%; */
     
     p {
         text-align: center;
