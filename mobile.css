@@ -1,10 +1,9 @@
 body {
-    /* border: 2px solid #ff0000; */
+    border: 2px solid #ff0000;
     background-color: #93e8f3;
     margin: 0px;
     padding: 0%;
     margin: auto;
-    height: 100vh;
 }
 
 .container {
@@ -364,7 +363,7 @@ footer {
     background-color: rgb(88, 88, 88);
     height: fit-content;
     padding-block: 4px;
-    position: sticky;
+    position: absolute;
     bottom: 0%;
     
     p {

@@ -172,7 +172,7 @@ function getCustomPercentageValue(key) {
 
   $(custom_1_img).click(function () {
     if (
-      Number($(billInput).val()) === 0 || Number($(peopleInput).val()) === 0 || Number($(custom_1_input).val()) === 0) {
+      Number($(billInput).val()) === 0 || Number($(peopleInput).val()) === 0) {
       $(billContainer).addClass("warning");
       $(peopleContainer).addClass("warning");
       console.log("Cannot be empty");
@@ -234,6 +234,12 @@ function resetAll() {
     billInput.val("");
     peopleInput.val("");
     custom_1_input.val("");
+    $(billContainer).removeClass("warning");
+    $(peopleContainer).removeClass("warning");
+
+    percent_only.forEach((el) => {
+      $(el).removeClass("clicked");
+    });
   });
 }
 
